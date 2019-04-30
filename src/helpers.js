@@ -26,7 +26,7 @@ export const getUserPosition = () => {
 
 export const getWeatherByCoord = (coord) => {
 	return (
-		fetch(`https://api.darksky.net/forecast/4be6c0f5f88eaa6030743feb90f18c3e/${coord.latitude},${coord.longitude}?units=ca`, {method: 'get', mode: 'no-cors'})
+		fetch(`https://api.darksky.net/forecast/4be6c0f5f88eaa6030743feb90f18c3e/${coord.latitude},${coord.longitude}?units=ca`)
 			.then(data => data.json())
 	)
 }
