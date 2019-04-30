@@ -24,16 +24,9 @@ export const getUserPosition = () => {
 	});
 };
 
-// export const getLocationByCoordinates = (coord) => {
-// 	return (
-// 		fetch(`api.openweathermap.org/data/2.5/weather?lat=${coord.latitude}&${coord.longitude}`)
-// 			.then(data => data.json())
-// 	)
-// };
-
 export const getWeatherByCoord = (coord) => {
 	return (
-		fetch(`https://api.darksky.net/forecast/4be6c0f5f88eaa6030743feb90f18c3e/${coord.latitude},${coord.longitude}?units=ca`)
+		fetch(`https://api.darksky.net/forecast/4be6c0f5f88eaa6030743feb90f18c3e/${coord.latitude},${coord.longitude}?units=ca`, {method: 'get', mode: 'no-cors'})
 			.then(data => data.json())
 	)
 }
