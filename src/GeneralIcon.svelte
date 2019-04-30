@@ -666,6 +666,9 @@
 	<div class="cloudy"></div>
 	<div class="sunny"></div>
 
+{:else if typeIcon === 'cloudy'}
+	<div class="cloudy"></div>
+
 {:else if typeIcon === 'clear-day'}
 	<div class="sunny"></div>
 
@@ -699,6 +702,7 @@
 	<div class="fog2 f2"></div>
 	<div class="fog3 f1"></div>
 	<div class="fog3 f2"></div>
+
 {:else if typeIcon === 'partly-cloudy-night'}
 	<div class="cloudy"></div>
 	<div class="starry"></div>
